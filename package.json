@@ -1,0 +1,7 @@
+{
+  "name": "iwritelists-basicbot",
+  "version": "0.1.0",
+  "author": "No More Sugar <http://nomoresugar.github.io/>",
+  "main": "basicBot.js",
+  "description": "An example plugin/bot implementation for IWriteLists."
+}
