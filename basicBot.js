@@ -7,6 +7,10 @@ function getVersion(){
 function init(twimod){
   eh=twimod.eventHandler;
 
+  eh.registerEvent("logOn", function(){
+    bot.setPersonaState(Steam.EPersonaState.Online);
+  })
+
   eh.registerCommand("about", function(obj){
     obj.reply("My Amazing IWriteLists bot\n(c) 2013-2014 No More Sugar, tdlive aw'sum & contributors.\nPowered by IWriteLists " + getVersion() + ". http://github.com/NoMoreSugar/iwritelists");
   });
