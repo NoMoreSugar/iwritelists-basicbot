@@ -7,7 +7,7 @@ function getVersion(){
 function init(twimod){
   eh=twimod.eventHandler;
 
-  eh.registerEvent("logOn", function(){
+  eh.registerEvent("loggedOn", function(){
     bot.setPersonaState(Steam.EPersonaState.Online);
   })
 
