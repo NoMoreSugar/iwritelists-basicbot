@@ -1,14 +1,14 @@
 var fs=require("fs");
 
 function getVersion(){
-  return "git-master-" + fs.readFileSync("./.git/refs/heads/master").slice(0,10);
+  return "git-master-" + fs.readFileSync("../../.git/refs/heads/master").slice(0,10);
 }
 
 function init(twimod){
   eh=twimod.eventHandler;
 
   eh.registerEvent("loggedOn", function(){
-    bot.setPersonaState(Steam.EPersonaState.Online);
+    bot.setPersonaState(twimod.Steam.EPersonaState.Online);
   })
 
   eh.registerCommand("about", function(obj){
