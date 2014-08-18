@@ -8,7 +8,7 @@ function init(twimod){
   eh=twimod.eventHandler;
 
   eh.registerEvent("loggedOn", function(){
-    bot.setPersonaState(twimod.Steam.EPersonaState.Online);
+    bot.setPersonaState(twimod.steam.EPersonaState.Online);
   })
 
   eh.registerCommand("about", function(obj){
