@@ -1,7 +1,7 @@
 var fs=require("fs");
 
 function getVersion(){
-  return "git-master-" + fs.readFileSync("../../.git/refs/heads/master").slice(0,10);
+  return "git-master-" + fs.readFileSync("./.git/refs/heads/master").slice(0,10);
 }
 
 function init(twimod){
